@@ -1,6 +1,6 @@
 # NYTimeArticleList
 
-The application has been built with offline support. It has been designed using Android Architecture components with Room for offline data caching. The application is built in such a way that whenvever there is a service call, the result will be stored in local database, so in the further application launches the application ui will be populated with the data from database initially and at the sametime the service call being made in background. Once we have the refreshed data from the server, the ui will be gracefully updated accordingly.
+The application has been built with **offline support**. It has been designed using **Android Architecture components** with **Room** for offline data caching. The application is built in such a way that whenvever there is a service call, the result will be stored in local database, so in the further application launches the application ui will be populated with the data from database initially and at the sametime the service call being made in background. Once we have the refreshed data from the server, the ui will be gracefully updated accordingly.
 
 The whole application is built based on the MVVM archoitectural pattern. Dagger 2 has also been used for dependency injection.
 
