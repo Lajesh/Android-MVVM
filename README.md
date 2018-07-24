@@ -1,7 +1,7 @@
 # NYTimeArticleList
 
 # Application Architecture
-![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/3840395bfb3980b8.png)
+![alt text](https://cdn-images-1.medium.com/max/1600/1*OqeNRtyjgWZzeUifrQT-NA.png)
 
 # Technologies Used
 a) Android Architectural Components <br/>
