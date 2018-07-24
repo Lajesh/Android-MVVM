@@ -4,7 +4,7 @@
 ![alt text](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/img/3840395bfb3980b8.png)
 
 # Technologies Used
-a) Android Architectural Components
+a) Android Architectural Components <br/>
 b) Dagger 2 for Dependency Injection
 c) MVVM 
 d) Retrofit with Okhttp
