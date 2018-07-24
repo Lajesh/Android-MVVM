@@ -40,3 +40,15 @@ Before running the sonarqube job, make sure the project version has been updated
 For running the sonarqube job, type the below command in the terminal. <br/>
 
 ```./gradlew sonarqube assembleDebug```
+
+<br/>
+
+# How to generate code coverage report ?
+
+Open terminal and type the following command
+
+```./gradlew clean jacocoTestReport```
+
+The coverage report will be generated on the following path.
+
+``` app/build/reports ```
