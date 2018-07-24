@@ -5,10 +5,10 @@
 
 # Technologies Used
 a) Android Architectural Components <br/>
-b) Dagger 2 for Dependency Injection
-c) MVVM 
-d) Retrofit with Okhttp
-e) Room for data caching
-f) JUnit and Mockito for Unit testing
-d) Repository pattern
+b) Dagger 2 for Dependency Injection <br/>
+c) MVVM <br/>
+d) Retrofit with Okhttp <br/>
+e) Room for data caching <br/>
+f) JUnit and Mockito for Unit testing <br/>
+d) Repository pattern <br/>
 
