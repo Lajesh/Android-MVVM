@@ -12,3 +12,9 @@ e) Room for data caching <br/>
 f) JUnit and Mockito for Unit testing <br/>
 d) Repository pattern <br/>
 
+# How to build ?
+
+Open terminal <br/>
+
+``` gradlew assembleDebug ```
+
