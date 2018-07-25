@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NYTimesApp</string>
+    <string name="article_icon">Article Icon</string>
+
+    <!-- Network Errors-->
+    <string name="networkError">Oh! You are not connected to a wifi or cellular data network. Please connect and try again</string>
+    <string name="networkErrorCode">NO_INTERNET_CONNECTION</string>
+    <string name="unknownError">Something went wrong!</string>
+
+    <string name="requestTimeOutError">Oooops! We couldn’t capture your request in time. Please try again.</string>
+
+    <string name="errorCodeMalformedJson">MALFORMED_JSON</string>
+    <string name="responseMalformedJson">Oops! We hit an error. Try again later.</string>
+
+    <string name="errorCodeConnectFailed">Connection failed</string>
+    <string name="responseConnectFailed">Oops! Connection timeout.</string>
+
+    <string name="search_hint">Search Articles</string>
+    <string name="action_search">Search</string>
+</resources>
