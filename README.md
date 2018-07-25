@@ -32,7 +32,7 @@ e) JSoup for HTML Parsing
 
 Open terminal and type the below command to generate debug build <br/>
 
-``` gradlew assembleDebug ```
+``` ./gradlew assembleDebug ```
 
 Open terminal and type the below command to generate release build <br/>
 
