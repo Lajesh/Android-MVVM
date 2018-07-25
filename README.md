@@ -20,6 +20,8 @@ The main advatage of using MVVM, there is no two way dependency between ViewMode
 
 # Screenshots
 <img src="/screenshots/screenshot_mainpage.png" alt="Home"/>
+<img src="/screenshots/screenshot_details.png" alt="Home"/>
+<img src="/screenshots/screenshot_search.png" alt="Home"/>
 
 # Programming Practices Followed
 a) Android Architectural Components <br/>
