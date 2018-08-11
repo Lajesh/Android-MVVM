@@ -1,4 +1,4 @@
-# NYTimeArticleList
+# Android MVVM Base Architecture for Enterprise Mobile Application using Architectural Components
 
 # Highlights
 
@@ -9,9 +9,9 @@
 5. Gradle scripts for running sonarqube static code analysis, code coverage, etc.
 
 
-The application has been built with **offline support**. It has been designed using **Android Architecture components** with **Room** for offline data caching. The application is built in such a way that whenvever there is a service call, the result will be stored in local database, so in the further application launches the application ui will be populated with the data from database initially and at the sametime the service call being made in background. Once we have the refreshed data from the server, the ui will be gracefully updated accordingly.
+The application has been built with **offline support**. It has been designed using **Android Architecture components** with **Room** for offline data caching. The application is built in such a way that whenvever there is a service call, the result will be stored in local database.
 
-The whole application is built based on the MVVM architectural pattern. Dagger 2 has also been used for dependency injection.
+The whole application is built based on the MVVM architectural pattern.
 
 # Application Architecture
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*OqeNRtyjgWZzeUifrQT-NA.png)
