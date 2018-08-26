@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.design.widget.CoordinatorLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/languageSelectionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/languages"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@id/fragContainer"/>
 
         <FrameLayout
             android:id="@+id/fragContainer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </android.support.design.widget.CoordinatorLayout>
+            android:layout_height="match_parent"
+            android:layout_below="@id/languageSelectionSpinner">
+
+
+        </FrameLayout>
+    </RelativeLayout>
 
 </layout>

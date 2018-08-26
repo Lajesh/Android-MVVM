@@ -2,8 +2,11 @@ package com.nytimes.articles;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.content.res.Configuration;
 
 import com.nytimes.articles.di.components.DaggerAppComponent;
+import com.nytimes.articles.managers.LocaleManager;
 
 import javax.inject.Inject;
 
@@ -12,7 +15,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
 
 /**
- * File Description
+ * The Application class
  * <p>
  * Author: Lajesh D
  * Email: lajeshds2007@gmail.com
@@ -53,5 +56,19 @@ public class NYTimesApp extends Application implements HasActivityInjector {
     @Override
     public AndroidInjector<Activity> activityInjector() {
         return activityDispatchingInjector;
+    }
+
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleManager.setLocale(base));
+
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        LocaleManager.setLocale(this);
+
     }
 }

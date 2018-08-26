@@ -1,5 +1,6 @@
 package com.nytimes.articles.view.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
@@ -14,9 +15,13 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.HasSupportFragmentInjector;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
+import android.widget.Toast;
+
+import com.nytimes.articles.managers.LocaleManager;
+import com.nytimes.articles.view.activity.MainActivity;
 
 /**
- * File Description
+ * All Activity should be extended from this
  * <p>
  * Author: Lajesh D
  * Email: lajeshds2007@gmail.com
@@ -44,6 +49,20 @@ public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatA
     @Override
     public AndroidInjector<Fragment> supportFragmentInjector() {
         return fragmentAndroidInjector;
+    }
+
+    protected boolean setNewLocale(String language, boolean restartProcess) {
+        LocaleManager.setNewLocale(this, language);
+
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+
+        if (restartProcess) {
+            System.exit(0);
+        } else {
+            Toast.makeText(this, "Activity restarted", Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 }
 

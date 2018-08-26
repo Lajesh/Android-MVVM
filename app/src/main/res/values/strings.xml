@@ -18,4 +18,11 @@
     <string name="search_hint">Search Articles</string>
     <string name="action_search">Search</string>
     <string name="action_navigate">Navigate</string>
+    <string name="action_about">About</string>
+    <string name="action_language">Language</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>عربى</item>
+    </string-array>
 </resources>

@@ -10,4 +10,12 @@
         android:title="@string/action_search"
         app:showAsAction="always"
         app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/action_language"
+        android:title="@string/action_language"
+        app:showAsAction="collapseActionView"/>
 </menu>
