@@ -63,6 +63,7 @@ android {
                 includeNoLocationClasses = true
             }
         }
+        unitTests.returnDefaultValues = true
     }
 
     sonarqube {
@@ -144,8 +145,15 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     testImplementation 'org.mockito:mockito-core:2.7.6'
+    testImplementation 'android.arch.core:core-testing:1.1.1'
 
     implementation 'org.jsoup:jsoup:1.10.2'
     implementation project (':yellow_dependency')
 
+    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
 }
